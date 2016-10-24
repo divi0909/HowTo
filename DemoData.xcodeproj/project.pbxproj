@@ -14,6 +14,10 @@
 		B2E01FA21DBDE997008C03C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E01FA01DBDE997008C03C0 /* LaunchScreen.storyboard */; };
 		B2E01FAD1DBDE997008C03C0 /* DemoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01FAC1DBDE997008C03C0 /* DemoDataTests.swift */; };
 		B2E01FB81DBDE997008C03C0 /* DemoDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01FB71DBDE997008C03C0 /* DemoDataUITests.swift */; };
+		B2E01FCC1DBDEA8E008C03C0 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E01FC71DBDEA8E008C03C0 /* TFHpple.m */; };
+		B2E01FCD1DBDEA8E008C03C0 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E01FC91DBDEA8E008C03C0 /* TFHppleElement.m */; };
+		B2E01FCE1DBDEA8E008C03C0 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E01FCB1DBDEA8E008C03C0 /* XPathQuery.m */; };
+		B2E01FD11DBDED1A008C03C0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E01FD01DBDED1A008C03C0 /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,14 @@
 		B2E01FB31DBDE997008C03C0 /* DemoDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E01FB71DBDE997008C03C0 /* DemoDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataUITests.swift; sourceTree = "<group>"; };
 		B2E01FB91DBDE997008C03C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E01FC51DBDEA8E008C03C0 /* DemoData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoData-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2E01FC61DBDEA8E008C03C0 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		B2E01FC71DBDEA8E008C03C0 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		B2E01FC81DBDEA8E008C03C0 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		B2E01FC91DBDEA8E008C03C0 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		B2E01FCA1DBDEA8E008C03C0 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		B2E01FCB1DBDEA8E008C03C0 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		B2E01FD01DBDED1A008C03C0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E01FD11DBDED1A008C03C0 /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				B2E01FAB1DBDE997008C03C0 /* DemoDataTests */,
 				B2E01FB61DBDE997008C03C0 /* DemoDataUITests */,
 				B2E01F951DBDE997008C03C0 /* Products */,
+				B2E01FCF1DBDED1A008C03C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +111,19 @@
 		B2E01F961DBDE997008C03C0 /* DemoData */ = {
 			isa = PBXGroup;
 			children = (
+				B2E01FC61DBDEA8E008C03C0 /* TFHpple.h */,
+				B2E01FC71DBDEA8E008C03C0 /* TFHpple.m */,
+				B2E01FC81DBDEA8E008C03C0 /* TFHppleElement.h */,
+				B2E01FC91DBDEA8E008C03C0 /* TFHppleElement.m */,
+				B2E01FCA1DBDEA8E008C03C0 /* XPathQuery.h */,
+				B2E01FCB1DBDEA8E008C03C0 /* XPathQuery.m */,
 				B2E01F971DBDE997008C03C0 /* AppDelegate.swift */,
 				B2E01F991DBDE997008C03C0 /* ViewController.swift */,
 				B2E01F9B1DBDE997008C03C0 /* Main.storyboard */,
 				B2E01F9E1DBDE997008C03C0 /* Assets.xcassets */,
 				B2E01FA01DBDE997008C03C0 /* LaunchScreen.storyboard */,
 				B2E01FA31DBDE997008C03C0 /* Info.plist */,
+				B2E01FC51DBDEA8E008C03C0 /* DemoData-Bridging-Header.h */,
 			);
 			path = DemoData;
 			sourceTree = "<group>";
@@ -123,6 +144,14 @@
 				B2E01FB91DBDE997008C03C0 /* Info.plist */,
 			);
 			path = DemoDataUITests;
+			sourceTree = "<group>";
+		};
+		B2E01FCF1DBDED1A008C03C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2E01FD01DBDED1A008C03C0 /* libxml2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +222,7 @@
 				TargetAttributes = {
 					B2E01F931DBDE997008C03C0 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B2E01FA71DBDE997008C03C0 = {
@@ -259,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E01FCD1DBDEA8E008C03C0 /* TFHppleElement.m in Sources */,
 				B2E01F9A1DBDE997008C03C0 /* ViewController.swift in Sources */,
+				B2E01FCE1DBDEA8E008C03C0 /* XPathQuery.m in Sources */,
+				B2E01FCC1DBDEA8E008C03C0 /* TFHpple.m in Sources */,
 				B2E01F981DBDE997008C03C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +445,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = DemoData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octal.DemoData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoData/DemoData-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +461,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = DemoData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octal.DemoData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoData/DemoData-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
